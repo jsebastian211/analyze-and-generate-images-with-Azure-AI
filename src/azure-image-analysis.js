@@ -12,6 +12,7 @@ export function analyzeImage(imageUrl) {
     },
     body: JSON.stringify({ url: imageUrl })
   };
+  console.log(process.env);
   return fetch(endpoint, params)
     .then(response => response.json())
     .then(data => {
