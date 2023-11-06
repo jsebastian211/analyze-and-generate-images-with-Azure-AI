@@ -34,15 +34,6 @@ jobs:
           api_location: "api" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-      - name: Create dot file
-        run: |
-            echo REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }} 
-      - name: last test
-        uses: oNaiPs/secrets-to-env-action@v1
-        with:
-          secrets: ${{ toJSON(secrets) }}
-      - name: last test 2
-        run: 'echo Value of MY_SECRET1: $REACT_APP_API_KEY'
 
           
 
