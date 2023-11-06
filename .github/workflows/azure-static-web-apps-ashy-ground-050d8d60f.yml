@@ -36,7 +36,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
       - name: Create dot file
         run: |
-            touch .env
+            sudo touch .env
             echo API_KEY=${{ secrets.API_KEY }} >> .env
 
           
