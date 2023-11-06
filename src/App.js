@@ -1,6 +1,7 @@
 import React from 'react';
 import { analyzeImage } from './azure-image-analysis';
 import { useState } from 'react';
+require('dotenv').config();
 
 function App() {
   const [imageUrl, setImageUrl] = useState("");
