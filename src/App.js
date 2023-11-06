@@ -28,7 +28,7 @@ function App() {
       <button onClick={validateImage}>Analize</button>
       <button>Generate</button>
       <br></br>
-      <img src={imageUrl} alt="prompted image" width="500" height="600"></img>
+      <img src={imageUrl} alt="prompted" width="500" height="600"></img>
       <pre>{JSON.stringify(result, null, 2)}</pre>
     </div>
   );
