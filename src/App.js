@@ -21,14 +21,14 @@ function App() {
     <div>
       <h1>Computer Vision</h1>
       <br></br>
-      <a>Insert URL or type prompt</a>
+      <b>Insert URL or type prompt</b>
       <br></br>
       <input type="text" placeholder="Enter url to analize or textual prompt to generate an image" value={imageUrl} onChange={e => setImage(e.target.value)}></input>
       <br></br>
       <button onClick={validateImage}>Analize</button>
       <button>Generate</button>
       <br></br>
-      <img src={imageUrl} alt="image" width="500" height="600"></img>
+      <img src={imageUrl} alt="prompted image" width="500" height="600"></img>
       <pre>{JSON.stringify(result, null, 2)}</pre>
     </div>
   );
