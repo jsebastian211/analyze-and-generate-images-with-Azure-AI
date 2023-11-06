@@ -34,6 +34,10 @@ jobs:
           api_location: "api" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+      - name: create env file
+          run: |
+            touch .env
+            echo API_KEY=${{ secrets.API_KEY }} >> .env
 
 
   close_pull_request_job:
