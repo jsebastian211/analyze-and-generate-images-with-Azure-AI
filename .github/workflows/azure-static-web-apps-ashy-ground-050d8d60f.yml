@@ -37,10 +37,6 @@ jobs:
       - name: Create dot file
         run: |
             echo API_KEY=${{ secrets.REACT_APP_API_KEY }} 
-      - name: last test
-        uses: oNaiPs/secrets-to-env-action@v1
-        with:
-          secrets: ${{ toJSON(secrets) }}
 
           
 
