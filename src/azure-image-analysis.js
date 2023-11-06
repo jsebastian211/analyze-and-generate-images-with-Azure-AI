@@ -1,8 +1,9 @@
+
+
 export function analyzeImage(imageUrl) {
   alert("1")
-  
   const endpoint = "https://instanciaprueba.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=tags,read,caption,denseCaptions,smartCrops,objects,people";
-  const API_KEY =process.env.API_KEY ;
+  const API_KEY = `${process.env.REACT_APP_API_KEY}` ;
   console.log(API_KEY);
   const params = {
     method: "POST",
